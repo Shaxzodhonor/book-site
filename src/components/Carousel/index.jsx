@@ -15,16 +15,16 @@ import "swiper/scss/free-mode";
 import { FreeMode, Pagination, Navigation } from "swiper";
 
 function Carousel({array}) {
+  console.log(array);
   return(
       <Swiper
         // install Swiper modules
         slidesPerView={5}
         spaceBetween={30}
-        freeMode={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination, Navigation]}
+        modules={[ Pagination, Navigation]}
         className="mySwiper"
         slidesPerGroup={2}
         loop={true}

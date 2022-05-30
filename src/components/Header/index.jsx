@@ -17,16 +17,16 @@ function Header() {
             <a href="#">Акции</a>
           </li>
           <li className="item">
-            <a href="#">Каталлог</a>
+            <a href="#catalog">Каталлог</a>
           </li>
           <li className="item">
-            <a href="#">Доставка</a>
+            <a href="#delivery">Доставка</a>
           </li>
           <li className="item">
-            <a href="#">О магазине</a>
+            <a href="#about">О магазине</a>
           </li>
           <li className="item">
-            <a href="#">Блог</a>
+            <a href="#social">Блог</a>
           </li>
         </ul>
         <div className="search">

@@ -31,13 +31,13 @@ function Footer (){
             <div className="nav-title">Информация</div>
             <ul className="nav-items">
               <li className="nav-item">
-                <a href="#">Доставка</a>
+                <a href="#delivery">Доставка</a>
               </li>
               <li className="nav-item">
                 <a href="#">Оплата</a>
               </li>
               <li className="nav-item">
-                <a href="#">O магазине
+                <a href="#about">O магазине
 </a>
               </li>
             </ul>

@@ -40,23 +40,46 @@
     background-position: center;
     width: 632px;
     height: 488px;
-    display: flex;
-    align-items: center;
     .swiper {
-      height: 350px;
+      margin-top: 30px;
+      height: 390px;
       width: 562px;
       margin-left: -60px;
-      padding-bottom: 50px;
+      padding-bottom: 90px;
     }
     .swiper-slide {
+      position: relative;
       display: flex;
       align-items: center;
       height: 300px;
+      .text-wrap {
+        margin-left: 60px;
+        padding: 4px;
+        color:#fff;
+        position: absolute;
+        top: 100%;
+        // background-color: #4C2901;
+        .title {
+          font-weight: 900;
+          font-size: 15px;
+          line-height: 196.19%;
+        }
+        .auth {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 96.69%;
+        }
+        .price {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 196.19%;
+        }
+      }
     }
     .swiper-pagination-bullet {
       border-radius: 0px;
       width: 26px;
-      height: 9px;
+      height: 6px;
       background-color: rgb(218, 200, 200);
     }
     .swiper-pagination-bullet-active {

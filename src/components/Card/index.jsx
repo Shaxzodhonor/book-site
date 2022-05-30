@@ -4,11 +4,11 @@ import "./style.scss";
 import Lovely from "../../assets/images/lovely.png"
 
 
-function Card (){
-
+function Card ({images}){
+  console.log(images);
   return(
     <div className="card">
-      <img src="" alt="" width={134} height={190} />
+      <img src={images} alt="" width={134} height={190} />
       <span className="price">300 грн.</span>
       <h3 className="title">Порядок в Хаосе</h3>
       <span className="author">Константин Коптелов</span>
