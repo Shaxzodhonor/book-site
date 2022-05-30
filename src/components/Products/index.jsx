@@ -2,13 +2,12 @@ import "./style.scss";
 
 // components
 import Card from "../Card"
+import Carousel from "../Carousel";
 
-// carusel
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 
 function Products (){
+  
 
   return(
     <div className="products container">
@@ -23,7 +22,7 @@ function Products (){
           <li className="items">Другие</li>
         </ul>
       </div>
-      <Card />
+      <Carousel></Carousel>
     </div>
   )
 }

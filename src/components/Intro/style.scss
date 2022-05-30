@@ -40,6 +40,28 @@
     background-position: center;
     width: 632px;
     height: 488px;
-
+    display: flex;
+    align-items: center;
+    .swiper {
+      height: 350px;
+      width: 562px;
+      margin-left: -60px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      height: 300px;
+    }
+    .swiper-pagination-bullet {
+      border-radius: 0px;
+      width: 26px;
+      height: 9px;
+      background-color: rgb(218, 200, 200);
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #fff;
+      border-radius: 0px;
+    }
   }
 }

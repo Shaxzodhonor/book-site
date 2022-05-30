@@ -44,6 +44,35 @@ header {
     border-bottom: 1px solid rgba(105, 103, 100, 0.59);
     padding-left: 7px;
     outline: none;
+    background-color: transparent;
+   }
+ }
+ .selected-wrap {
+   display: flex;
+   margin-left: 102px;
+   button {
+     padding: 0;
+     background-color: transparent;
+     border: none;
+      &:hover {
+        cursor: pointer;
+      }
+   }
+   .basket-wrap {
+     display: flex;
+     align-items: center;
+     margin-left: 12px;
+     .amount {
+       display: inline-block;
+        margin-left: 6px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-primary;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
    }
  }
 }
