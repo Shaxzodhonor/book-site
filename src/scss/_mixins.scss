@@ -1,0 +1,294 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin link-unstyled {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@mixin middle-button  {
+  background-color: $color-primary;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+
+  padding: 11px 34px;
+  font-size: 15px;
+  line-height: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin  large-button  {
+  background-color: $color-primary;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+
+  padding: 14px 79px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin  table-style {
+  background-color: #fff;
+  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid $color-primary;
+  }
+  thead {
+    background-color: $color-primary;
+    color: #fff; 
+  }
+  tr {
+    border-bottom: 1px solid $color-primary;
+    text-align: left;
+  }
+  tr.center {
+    text-align: center;
+  } 
+  td, th {
+    padding: 20px;
+  
+    
+  } 
+  td div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    margin: auto;
+  }
+  .text-right {
+    min-width: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .edit-btn {
+      margin-right: 17px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      border: none;
+      height: 34px;
+      width: 34px;
+      border-radius: 5px;
+    }
+    .delete-btn {
+      background-color:  rgba(214, 31, 31, 0.1);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .btn-wrap {
+    min-width: 0;
+  }
+  
+}
+@mixin  admin-main-modal {
+  background-color: #fff;
+  padding: 25px;
+  padding-bottom: 65px;
+  color: #000;
+
+  .close-btn {
+    background-color: $color-primary;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-right: -25px;
+    
+    img {
+      display: block;
+    }
+  }
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;  
+  }
+
+  .content-wrap {
+    display: flex;
+
+    .file-label {
+      width: 230px;
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(1, 56, 77,0.1);
+      border-radius: 8px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .inputs-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 490px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: -25px;
+
+    }
+
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+
+      textarea {
+        width: 100%;
+        height: 127px;
+        resize: none;
+      }
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+
+  .input-wrap {
+    width: 220px;
+    margin-bottom: 20px;
+
+    label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    input, textarea, select,option {
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 12px 15px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      outline: none;
+      color: rgba(0, 0, 0,0.6);
+    }
+  }
+
+  .sale-wrap {
+    position: relative;
+    .sale-inp {
+      flex-shrink: 0;
+    }
+    .sale-check {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .status-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .status-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }  
+  .large-button {
+    @include large-button;
+  }
+}
+
+@mixin delete-modal {
+  background-color: #fff;
+  color: #000000;
+  padding: 25px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  .button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 22px;
+    .radio {
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      
+      .radio-content {
+        padding: 9px 29px;
+        border-radius: 5px;
+        display: inline-block;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      input {
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      .yes-btn {
+        background: rgba(214, 31, 31,0.1);
+        margin-left: 8px;
+      }
+    }
+
+    button {
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 9px 29px;
+      border-radius: 5px;
+    }
+    
+  }
+}

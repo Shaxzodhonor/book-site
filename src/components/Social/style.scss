@@ -1,0 +1,24 @@
+@import "../../scss/main.scss";
+
+#social {
+  padding-top: 77px;
+  padding-bottom: 75px;
+  color: $color-primary;
+  .title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 196.19%;
+    margin-bottom: 31px;
+  }
+  .items {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item:not(:last-child) {
+    margin-right: 9px;
+  }
+
+}

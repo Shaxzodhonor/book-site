@@ -1,0 +1,23 @@
+@import "../../scss/main.scss";
+
+#delivery {
+  padding-top: 75px;
+  .title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 56px;
+  }
+  .text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 196.19%;
+  }
+  button {
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    border: none;
+  }
+
+}

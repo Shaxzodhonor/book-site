@@ -1,0 +1,45 @@
+@import "../../scss/main.scss";
+
+#intro {
+  padding-top: 88px;
+  color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    .title {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 196.19%;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 196.19%;
+      max-width: 370px;
+      margin-bottom: 16px;
+    }
+    button {
+      background-color: #E16A00;
+      padding: 11px 24px;
+      border: none;
+
+      font-weight: 900;
+      font-size: 15px;
+      line-height: 196.19%;
+      color: #FFFFFF;
+    }
+  }
+  .right {
+    margin-right: -123px;
+    background-color: #E16A00;
+    background-image: url("../../assets/images/intro-bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 632px;
+    height: 488px;
+
+  }
+}

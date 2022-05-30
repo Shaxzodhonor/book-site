@@ -1,0 +1,28 @@
+@import "../../scss/main.scss";
+
+.products.container {
+  color: $color-primary;
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 196.19%;
+      margin-right: 94px;
+    }
+  }
+  .nav{
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    .items {
+      margin-right: 40px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 196.19%;
+    }
+  }
+  
+}
