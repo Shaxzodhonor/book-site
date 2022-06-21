@@ -43,10 +43,17 @@
     font-size: 12px;
     line-height: 196.19%;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff7700;
+    }
   }
   button.lovely {
     background-color: transparent;
     border: none;
     vertical-align: middle;
+    transition: background-color 0.3s ease;
+   cursor: pointer;
   }
 }
